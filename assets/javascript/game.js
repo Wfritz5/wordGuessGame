@@ -100,7 +100,7 @@ document.onkeypress = function (event) {
 
 function play() {
   if (actualWord == "apple") {
-    var picture = "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeE-XUkjXgBWaqNaMprbN58CCXIOo8UxSQickhEYJw2b3Bae2dA'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/apple.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "pear") {
@@ -112,7 +112,7 @@ function play() {
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord.toString() == "banana") {
-    var picture = "<img src='https://github.com/Wfritz5/wordGuessGame/blob/master/assets/images/banana.jpg?raw=true'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/banana.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "strawberry") {
@@ -120,7 +120,7 @@ function play() {
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "orange") {
-    var picture = "<img src='../images/orange.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   }
