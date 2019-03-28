@@ -104,11 +104,11 @@ function play() {
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "pear") {
-    var picture = '<img src="../images/pear.jpg">'
+    var picture = '<img src="https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/pear.jpg">'
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "peach") {
-    var picture = "<img src='../images/peach.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/peach.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord.toString() == "banana") {
@@ -116,7 +116,7 @@ function play() {
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "strawberry") {
-    var picture = "<img src='../images/strawberry.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/strawberry.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "orange") {
