@@ -112,7 +112,7 @@ function play() {
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord.toString() == "banana") {
-    var picture = "<img src='../images/banana.jpg'>"
+    var picture = "<img src='https://github.com/Wfritz5/wordGuessGame/blob/master/assets/images/banana.jpg?raw=true'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "strawberry") {
