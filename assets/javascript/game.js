@@ -1,0 +1,148 @@
+// variables
+var word = ["apple", "pear", "peach", "banana", "strawberry", "orange"];
+var actualWord = "";
+var letters = [];
+var output = [];
+var wrongLetters = [];
+
+var num = 0;
+var guessesLeft = 12;
+var losses = 0;
+var wins = 0;
+
+// random word generator
+function gameStart() {
+  actualWord = word[Math.floor(Math.random() * word.length)];
+  letters = actualWord.split("");
+  num = letters.length;
+
+  // console.log(num);
+  // console.log(letters);
+  // console.log(actualWord)
+  //  guesses left
+  guessesLeft = 6;
+  wrongLetters = [];
+  output = [];
+  // for loop to get number of letters on screen
+  for (var i = 0; i < num; i++) {
+    output.push("_")
+    console.log(output)
+  }
+  //  grabbing elements from html
+  document.getElementById("secretAnswer").innerHTML = output.join(" ");
+  document.getElementById("game").innerHTML = wins;
+  document.getElementById("losses").innerHTML = losses;
+  document.getElementById("guessesLeft").innerHTML = guessesLeft;
+
+};
+
+// check guesses to see if guesses are in the answer
+function checkAnswer(letter) {
+
+  var letterInWord = false;
+
+  for (var j = 0; j < num; j++) {
+
+    if (letter == actualWord[j]) {
+      letterInWord = true;
+    }
+  }
+
+  if (letterInWord) {
+    for (var j = 0; j < num; j++) {
+      if (actualWord[j] == letter) {
+        output[j] = letter;
+        console.log(output)
+      }
+    }
+  } else {
+    if (!wrongLetters.includes(letter)) {
+      wrongLetters.push(letter);
+      guessesLeft--;
+
+    }
+    // wrongLetters.push(letter);
+    // guessesLeft--;
+  }
+  // if guess has already been guessed then break?
+};
+
+
+gameStart();
+
+
+function rounds() {
+  document.getElementById("guessesLeft").innerHTML = guessesLeft;
+  document.getElementById("answersGuessed").innerHTML = wrongLetters;
+  document.getElementById("secretAnswer").innerHTML = output.join(" ");
+
+  if (letters.toString() == output.toString()) {
+    wins++
+    document.getElementById("game").innerHTML = wins;
+    play();
+  } else if (guessesLeft === 0) {
+    losses++
+    document.getElementById("losses").innerHTML = losses;
+    gameStart();
+  }
+};
+
+//event listener
+document.onkeypress = function (event) {
+  var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+  console.log(userGuess);
+  checkAnswer(userGuess);
+  rounds();
+};
+
+
+//  getting images to pop up after correct guess
+
+function play() {
+  if (actualWord == "apple") {
+    var picture = "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCeE-XUkjXgBWaqNaMprbN58CCXIOo8UxSQickhEYJw2b3Bae2dA'>"
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  } else if (actualWord == "pear") {
+    var picture = '<img src="../images/pear.jpg">'
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  } else if (actualWord == "peach") {
+    var picture = "<img src='../images/peach.jpg'>"
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  } else if (actualWord.toString() == "banana") {
+    var picture = "<img src='../images/banana.jpg'>"
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  } else if (actualWord == "strawberry") {
+    var picture = "<img src='../images/strawberry.jpg'>"
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  } else if (actualWord == "orange") {
+    var picture = "<img src='../images/orange.jpg'>"
+    document.querySelector("#picture").innerHTML = picture;
+    gameStart();
+  }
+
+};
+// END GAME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var audio = "<audio autoplay = 'autoplay' >" + "<source src=''></audio>"
+document.querySelector("#audio").innerHTML = audio;
