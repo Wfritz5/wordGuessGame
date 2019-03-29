@@ -1,6 +1,6 @@
 // variables
 var word = ["apple", "pear", "peach", "banana", "strawberry", "orange", "kiwi", "mango", "honeydew", "watermelon", "grapes",
-"lemon", "pineapple", "blueberry", "broccolli" ];
+"lemon", "pineapple", "blueberry", "broccolli", "coconut" ];
 var actualWord = "";
 var letters = [];
 var output = [];
@@ -161,6 +161,10 @@ function play() {
       var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/broccolli.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
+    }else if (actualWord == "coconut") {
+        var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/coconut.jpg>"
+        document.querySelector("#picture").innerHTML = picture;
+        gameStart();
     
   }
 
