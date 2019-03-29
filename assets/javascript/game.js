@@ -126,42 +126,43 @@ function play() {
     gameStart();
 
   } else if (actualWord == "kiwi") {
-    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/kiwi.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "mango") {
-    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/mango.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "honeydew") {
-    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/honeydew.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
     gameStart();
   } else if (actualWord == "watermelon") {
-    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+    var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/watermelon.jpg'>"
     document.querySelector("#picture").innerHTML = picture;
-    gameStart();  } else if (actualWord == "grapes") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+    gameStart();  
+  } else if (actualWord == "grapes") {
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/grapes.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     } else if (actualWord == "lemon") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/lemon.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     } else if (actualWord == "pineapple") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/pineapple.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     } else if (actualWord == "blueberry") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/blueberry.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     } else if (actualWord == "coconut") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/coconut.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     } else if (actualWord == "broccolli") {
-      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/orange.jpg'>"
+      var picture = "<img src='https://raw.githubusercontent.com/Wfritz5/wordGuessGame/master/assets/images/broccolli.jpg'>"
       document.querySelector("#picture").innerHTML = picture;
       gameStart();
     
